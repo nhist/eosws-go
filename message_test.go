@@ -23,7 +23,7 @@ func Test_GetActions(t *testing.T) {
 	ga.ReqID = "1"
 	ga.StartBlock = -10
 	ga.Listen = true
-	ga.Data.Accounts = "eosio.token"
+	ga.Data.Accounts = "zswhq.token"
 	ga.Data.ActionNames = "transfer"
 	ga.Data.WithInlineTraces = true
 
@@ -47,8 +47,8 @@ func Test_GetTableRowsFetch(t *testing.T) {
 	ga.Fetch = true
 	ga.WithProgress = 5
 	ga.Data.JSON = true
-	ga.Data.Code = "eosio.token"
-	ga.Data.Scope = "eosio"
+	ga.Data.Code = "zswhq.token"
+	ga.Data.Scope = "zswhq"
 	ga.Data.Table = "accounts"
 	client.Send(ga)
 	defer client.conn.Close()
@@ -71,8 +71,8 @@ func Test_GetTableRowsListen(t *testing.T) {
 	ga.Fetch = false
 	ga.WithProgress = 5
 	ga.Data.JSON = true
-	ga.Data.Code = "eosio"
-	ga.Data.Scope = "eosio"
+	ga.Data.Code = "zswhq"
+	ga.Data.Scope = "zswhq"
 	ga.Data.Table = "global"
 	client.Send(ga)
 	defer client.conn.Close()

@@ -37,8 +37,8 @@ func main() {
 		ga.Fetch = true
 		ga.WithProgress = 5
 		ga.Data.JSON = true
-		ga.Data.Code = "eosio.token"
-		ga.Data.Scope = "eosio"
+		ga.Data.Code = "zswhq.token"
+		ga.Data.Scope = "zswhq"
 		ga.Data.Table = "accounts"
 
 		fmt.Println("Sending `get_table_rows` message")

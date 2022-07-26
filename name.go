@@ -3,7 +3,7 @@ package eosws
 import "strings"
 
 func StringToName(s string) (val uint64, err error) {
-	// ported from the eosio codebase, libraries/chain/include/eosio/chain/name.hpp
+	// ported from the zswhq codebase, libraries/chain/include/zswhq/chain/name.hpp
 	var i uint32
 	sLen := uint32(len(s))
 	for ; i <= 12; i++ {
@@ -38,7 +38,7 @@ func charToSymbol(c byte) byte {
 var base32Alphabet = []byte(".12345abcdefghijklmnopqrstuvwxyz")
 
 func NameToString(in uint64) string {
-	// ported from libraries/chain/name.cpp in eosio
+	// ported from libraries/chain/name.cpp in zswhq
 	a := []byte{'.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.'}
 
 	tmp := in

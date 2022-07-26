@@ -28,7 +28,7 @@ Websocket consumer for the https://dfuse.io API on EOS networks.
 			Listen:     true,
 		}
 	}
-	ga.Data.Accounts = "eosio"
+	ga.Data.Accounts = "zswhq"
 	ga.Data.ActionNames = "onblock"
 	err = client.Send(ga)
 	if err != nil {

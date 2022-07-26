@@ -35,7 +35,7 @@ func main() {
 		ga.Listen = true
 		ga.WithProgress = 5
 		ga.IrreversibleOnly = true
-		ga.Data.Accounts = "eosio.token"
+		ga.Data.Accounts = "zswhq.token"
 		ga.Data.ActionNames = "transfer"
 		ga.Data.WithInlineTraces = true
 
